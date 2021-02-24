@@ -34,6 +34,23 @@ CREATE TABLE weather (
 DROP TABLE weather;
 \dt
 по новой CREATE TABLE weather NSERT INTO weather VALUES 
+pg_dump maximdb > /home/rodionov_gazman2013/backup/maximdb_edit.sql
+psql 
+DROP DATABASE maximdb;
+\dt
+create database maximdb;
+psql -U postgres -d maximdb < /home/rodionov_gazman2013/backup/maximdb_edit.sql;
+\l
+\connect maximdb
+\dt
+                 List of relations
+ Schema |          Name          | Type  |  Owner
+ public | weather                | table | postgres
+ SELECT * FROM weather;
+     city      | temp_lo | temp_hi | prcp |    date
+---------------+---------+---------+------+------------
+ San Francisco |      46 |      50 | 0.25 | 1994-11-27
+
 
  
 
