@@ -1,6 +1,6 @@
 # postgresql
  1  apt update
-    2  apt install postgresql-10
+    2  apt install postgresql-10;
     3  apt install postgresql postgresql-contrib
     4  apt install pg-activity
    10  git clone https://github.com/pthom/northwind_psql.git
