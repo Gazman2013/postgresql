@@ -4,7 +4,6 @@
 2. Master settings postgresql.conf, pg_hba.conf, create database, create role 
 3. Slave create recovery.conf
 4. Master create new table, insert values 
---------------------------------------------------------
 5. master
 6. \c levelup
 You are now connected to database "levelup" as user "postgres".
